@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista Duplamente Encadeada - TypeScript</title>
+    <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+    <h1>Lista Duplamente Encadeada</h1>
+    <p>Implementação em TypeScript com interface interativa</p>
+    <hr>
+
+    <h2>Entrada de Dados</h2>
+    <label for="valueInput">Valor:</label>
+    <input type="number" id="valueInput" placeholder="Digite um valor" min="0">
+    <br><br>
+    
+    <label for="positionInput">Posição (opcional):</label>
+    <input type="number" id="positionInput" placeholder="Posição" min="0">
+    <br><br>
+
+    <h2>Operações de Inserção</h2>
+    <button id="insertStart">Inserir no Início</button>
+    <button id="insertEnd">Inserir no Fim</button>
+    <button id="insertPosition">Inserir na Posição</button>
+    <br><br>
+
+    <h2>Operações de Remoção</h2>
+    <button id="removeStart">Remover do Início</button>
+    <button id="removeEnd">Remover do Fim</button>
+    <button id="removePosition">Remover da Posição</button>
+    <br><br>
+
+    <h2>Visualização</h2>
+    <button id="displayNormal">Exibir Normal</button>
+    <button id="displayReverse">Exibir Inverso</button>
+    <br><br>
+
+    <h2>Utilitários</h2>
+    <button id="isEmpty">Verificar se Vazia</button>
+    <button id="clear">Esvaziar Lista</button>
+    <button id="size">Mostrar Tamanho</button>
+    <br><br>
+
+    <hr>
+
+    <h2>Visualização da Lista</h2>
+    <div id="listDisplay">
+        <p>Lista vazia</p>
+    </div>
+
+    <hr>
+
+    <h2>Resultado das Operações</h2>
+    <div id="output">
+        <p>Aguardando operação...</p>
+    </div>
+
+    <script type="module" src="src/interface.ts"></script>
+</body>
+</html>

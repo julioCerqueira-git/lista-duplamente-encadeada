@@ -1,0 +1,93 @@
+/* Estilos básicos para a Lista Duplamente Encadeada */
+
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 10px;
+}
+
+h2 {
+    color: #555;
+    margin-top: 30px;
+    margin-bottom: 15px;
+}
+
+input[type="number"] {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-right: 10px;
+    width: 150px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+button:active {
+    background-color: #004085;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+#listDisplay {
+    background-color: white;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    min-height: 50px;
+}
+
+#output {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+    min-height: 100px;
+    max-height: 300px;
+    overflow-y: auto;
+}
+
+#output p {
+    margin: 5px 0;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+#output p:first-child {
+    background-color: #e9ecef;
+    font-weight: bold;
+}
+
+label {
+    font-weight: bold;
+    color: #555;
+    display: inline-block;
+    width: 120px;
+}
