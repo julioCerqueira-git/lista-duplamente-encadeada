@@ -11,50 +11,61 @@
     <p>Implementação em TypeScript com interface interativa</p>
     <hr>
 
-    <h2>Entrada de Dados</h2>
-    <label for="valueInput">Valor:</label>
-    <input type="number" id="valueInput" placeholder="Digite um valor" min="0">
-    <br><br>
-    
-    <label for="positionInput">Posição (opcional):</label>
-    <input type="number" id="positionInput" placeholder="Posição" min="0">
-    <br><br>
+    <div class="main-container">
+        <!-- Coluna Esquerda - Entrada de Dados e Operações -->
+        <div class="left-column">
+            <div class="input-group">
+                <label for="valueInput">Valor:</label>
+                <input type="number" id="valueInput" placeholder="Digite um valor" min="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="positionInput">Posição (opcional):</label>
+                <input type="number" id="positionInput" placeholder="Posição" min="0">
+            </div>
 
-    <h2>Operações de Inserção</h2>
-    <button id="insertStart">Inserir no Início</button>
-    <button id="insertEnd">Inserir no Fim</button>
-    <button id="insertPosition">Inserir na Posição</button>
-    <br><br>
+            <h2>Operações de Inserção</h2>
+            <div class="button-group">
+                <button id="insertStart">Inserir no Início</button>
+                <button id="insertEnd">Inserir no Fim</button>
+                <button id="insertPosition">Inserir na Posição</button>
+            </div>
 
-    <h2>Operações de Remoção</h2>
-    <button id="removeStart">Remover do Início</button>
-    <button id="removeEnd">Remover do Fim</button>
-    <button id="removePosition">Remover da Posição</button>
-    <br><br>
+            <h2>Operações de Remoção</h2>
+            <div class="button-group">
+                <button id="removeStart">Remover do Início</button>
+                <button id="removeEnd">Remover do Fim</button>
+                <button id="removePosition">Remover da Posição</button>
+            </div>
 
-    <h2>Visualização</h2>
-    <button id="displayNormal">Exibir Normal</button>
-    <button id="displayReverse">Exibir Inverso</button>
-    <br><br>
+            <h2>Visualização</h2>
+            <div class="button-group">
+                <button id="displayNormal">Exibir Normal</button>
+                <button id="displayReverse">Exibir Inverso</button>
+            </div>
 
-    <h2>Utilitários</h2>
-    <button id="isEmpty">Verificar se Vazia</button>
-    <button id="clear">Esvaziar Lista</button>
-    <button id="size">Mostrar Tamanho</button>
-    <br><br>
+            <h2>Utilitários</h2>
+            <div class="button-group">
+                <button id="isEmpty">Verificar se Vazia</button>
+                <button id="clear">Esvaziar Lista</button>
+                <button id="size">Mostrar Tamanho</button>
+            </div>
 
-    <hr>
+            <hr>
 
-    <h2>Visualização da Lista</h2>
-    <div id="listDisplay">
-        <p>Lista vazia</p>
-    </div>
+            <h2>Resultado das Operações</h2>
+            <div id="output">
+                <p>Aguardando operação...</p>
+            </div>
+        </div>
 
-    <hr>
-
-    <h2>Resultado das Operações</h2>
-    <div id="output">
-        <p>Aguardando operação...</p>
+        <!-- Coluna Direita - Visualização da Lista -->
+        <div class="right-column">
+            <h2>Visualização da Lista</h2>
+            <div id="listDisplay">
+                <p>Lista vazia</p>
+            </div>
+        </div>
     </div>
 
     <script type="module" src="src/interface.ts"></script>
